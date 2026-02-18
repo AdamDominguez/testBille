@@ -75,8 +75,8 @@ function handleClick() {
 }
 
 window.addEventListener("deviceorientation", (event) => {
-    bille.ax = event.gamma * 0.5;
-    bille.ay = event.beta * 0.5;
+    bille.ax = event.gamma * 0.001;
+    bille.ay = event.beta * 0.001;
 });
 
 update();
